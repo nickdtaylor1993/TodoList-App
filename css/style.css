@@ -6,10 +6,12 @@ body{
 	height: 100%; 
 	width: 80%;
  	margin: 0 auto;  
- 	background-image: url('../img/brushed.png');	
+ 	background-image: url('../img/brushed.png');
+	margin-bottom: 5%;
 }
 
-.wrapper{	
+
+.wrapper{
 	position:relative; 
 	width:90%;
 	min-height: 90%;
@@ -17,7 +19,7 @@ body{
  	border: 10px solid #ffcc00;
 	background-color: #ffff66; 
 	box-shadow: 20px 20px 5px #B8B84A; 
- 	margin: 2%;
+ 	margin: 0 auto%;
 }
 
 #title{
@@ -30,34 +32,33 @@ body{
  	text-align: center;
 }
 
+.items{
+	margin-top: 5%; 
+}
+
 .list-items{
+	background-color: transparent; 
+	border:none; 
+	border-bottom: 2px solid black; 
 	position:relative;
  	left: 5%; 	
 	display: inline-block; 
 	font-family: 'Lato', sans-serif;
-	font-size: 2em;
-	width: 50%; 
-	height: 90%; 		
+	font-size: 1.5em;
+	width: 75%; 
+	height: 90%;
+	margin-bottom: 5%;  
 }
 
-.list-items li {
-	border-bottom: 2px solid black;
- 	list-style-type: none;
-	margin-top: 50px; 	
-}
-
-#list{
-	display: inline-block; 
-}
-
-#box{
-	display: inline-block; 
+.list-items:focus{
+	outline:0;
 }
 
 .box-section{
 	position:relative; 
 	display: inline-block;
- 	top:0px; 	
+ 	top:0px; 
+	background-color: red; 	
 	float:right; 
 	width: 15%; 
 	height: 90%;
@@ -75,10 +76,56 @@ body{
  	background-size: 100% 100%; 	
 }
 
-.check-box{
+label{
+	position: relative; 
+	right:5%;  
+	display: inline-block; 
+	width:50px; 
+	height:50px;
+	background: white; 
+	border:1px solid black; 
+
+}
+input[type="checkbox"]{
+	display:none; 
+}
+
+input[type="checkbox"] + label{
+	width: 50px; 
+	height: 50px; 
+	float:right;
+	background-image: url('../img/off.png');
+	background-repeat: no-repeat;
+ 	background-size: 100% 100%; 	
+}
+
+input[type="checkbox"]:checked + label{
+	width: 50px; 
+	height: 50px; 
+	float:right;
 	background-image: url('../img/checkmark.png');
 	background-repeat: no-repeat;
  	background-size: 100% 100%; 	
+}
+
+.x-button{
+	cursor:pointer; 
+	width:20px;
+	height:20px; 
+	position:relative; 
+	left: 3%;
+	opacity:0.1;  
+	background-image: url('../img/removebutton.png'); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%;
+	transition: all 1s ease-in-out; 
+	-mox-transition: all 1s ease-in-out; 
+	-webkit-transition: all 1s ease-in-out; 
+	-o-transition: all 1s ease-in-out;  
+}
+
+.x-button:hover {
+	opacity: 1; 
 }
 
 #add-button{
