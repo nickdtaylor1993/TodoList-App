@@ -122,7 +122,7 @@ input[type="checkbox"]:checked + label{
 	opacity: 1; 
 }
 
-#add-button{
+.add-button{
 	position: absolute; 
 	right: 10%;   
 	display: inline-block; 
@@ -139,13 +139,13 @@ input[type="checkbox"]:checked + label{
 	cursor: pointer;  
 }
 
-#add-button p{
+.add-button p{
 	position: relative; 
 	top:-5px; 
 	margin: auto;  
 	display: inline-block; 
 }
 
-#add-button:hover{
+.add-button:hover{
 	opacity:0.8; 
 }
