@@ -4,22 +4,21 @@
 html,
 body{
 	height: 100%; 
-	width: 80%;
- 	margin: 0 auto;  
+	width: 100%;
+	margin: 0 auto; 
  	background-image: url('../img/brushed.png');
-	margin-bottom: 5%;
 }
 
 
 .wrapper{
 	position:relative; 
-	width:90%;
+	width:50%;
 	min-height: 90%;
 	border-radius: 5px;  
  	border: 10px solid #ffcc00;
 	background-color: #ffff66; 
 	box-shadow: 20px 20px 5px #B8B84A; 
- 	margin: 0 auto%;
+ 	margin: auto;
 }
 
 #title{
