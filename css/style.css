@@ -3,8 +3,7 @@
 
 html,
 body{
-	height: 100%; 
-	width: 100%;
+	padding-bottom:5px; 
 	margin: 0 auto; 
  	background-image: url('../img/brushed.png');
 }
@@ -13,12 +12,12 @@ body{
 .wrapper{
 	position:relative; 
 	width:50%;
-	min-height: 90%;
+	min-height: 500px;
 	border-radius: 5px;  
  	border: 10px solid #ffcc00;
 	background-color: #ffff66; 
 	box-shadow: 20px 20px 5px #B8B84A; 
- 	margin: auto;
+ 	margin: 5% auto;
 }
 
 #title{
