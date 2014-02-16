@@ -30,7 +30,7 @@ body{
 }
 
 .items{
-	margin-top: 5%; 
+	margin-top: 2%; 
 }
 
 .list-items{
@@ -83,14 +83,15 @@ label{
 	border:1px solid black; 
 
 }
-input[type="checkbox"]{
-	display:none; 
+input[type=checkbox]{
+	display:none;
 }
 
 input[type="checkbox"] + label{
 	width: 50px; 
 	height: 50px; 
 	float:right;
+	background-image: none; 
 }
 
 input[type="checkbox"]:checked + label{
@@ -101,6 +102,7 @@ input[type="checkbox"]:checked + label{
 	background-repeat: no-repeat;
  	background-size: 100% 100%; 	
 }
+
 
 .x-button{
 	cursor:pointer; 
@@ -121,6 +123,23 @@ input[type="checkbox"]:checked + label{
 .x-button:hover {
 	opacity: 1; 
 }
+
+
+.load{
+	position:absolute; 
+	left: 5%;
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background-color: black;
+	opacity: 0.6; 
+	text-align: center; 
+	border-radius: 5px; 
+	color: white; 
+	cursor:pointer;
+	font-family: 'Lato', sans-serif; 
+}
+
 
 .add-button{
 	position: absolute; 
